@@ -115,6 +115,7 @@ def shortest_path(source, target):
                     path.append((child.action, child.state))
                     child = child.parent
                 path.reverse()
+                return path
 
             frontier.add(child)
 
